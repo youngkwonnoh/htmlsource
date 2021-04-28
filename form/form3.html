@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form : 웹 서버에 정보를 제출하기 위한 양식 범위 -->
+    <form action="" method="POST" name="" novalidate>
+      <!-- 이 안에 작성하는 입력 양식은 모두 서버로 전송됨 -->
+      <fieldset>
+        <legend>로그인</legend>
+        <div>
+          <label for="userid">아이디</label>
+          <input type="text" name="userid" id="userid" />
+        </div>
+        <div>
+          <label for="">비밀번호</label>
+          <input type="password" name="password" id="pwd" />
+        </div>
+        <button type="submit">전송</button>
+      </fieldset>
+      <fieldset>
+        <legend>부가정보</legend>
+        <div>
+          <label for="tel"></label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+          />
+        </div>
+        <div>
+          <label for="date"></label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div>
+          <label for="datetime"></label>
+          <input type="datetime" name="datetime" id="datetime" />
+        </div>
+        <div>
+          <label for="datetime-local"></label>
+          <input type="datetime-local" name="datetime" id="datetime-local" />
+        </div>
+        <div>
+          <input type="month" name="" id="" />
+          <input type="time" name="" id="" />
+          <input type="week" name="" id="" />
+        </div>
+        <div>
+          <label for=""><input type="email" name="" id="" /></label>
+        </div>
+        <div>
+          <input type="search" name="" id="" />
+        </div>
+        <div>
+          <input type="number" name="" id="" />
+        </div>
+        <div>
+          <input type="url" name="" id="" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
