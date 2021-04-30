@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:disabled {
+        background-color: #add;
+        border: 1px #ccc solid;
+      }
+      input:checked + span {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        :link => 방문하지 않은 링크에 스타일 적용
+        :visited => 방문한 링크에 스타일 적용
+        :hover => 요소에 마우스를 올려놓았을 때 스타일 적용
+        :active => 요소를 활성화했을 때 스타일 적용
+        :focus => 웹 요소에 초점이 맞추어졌을 때 스타일 적용
+     -->
+    <h1>가상 클래스 선택자</h1>
+    <form action=""></form>
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <label for="">이름</label>
+      <input type="text" disabled />
+    </fieldset>
+    <fieldset>
+      <legend>신청 과목</legend>
+      <p>이 달에 신청할 과목을 선택하세요</p>
+      <label>
+        <input type="radio" name="subjec" value="speaking" checked /><span
+          >회화</span
+        >
+      </label>
+      <label>
+        <input type="radio" name="subjec" value="grammer" /><span>문법</span>
+      </label>
+      <label>
+        <input type="radio" name="subjec" value="writing" /><span>작문</span>
+      </label>
+    </fieldset>
+  </body>
+</html>
