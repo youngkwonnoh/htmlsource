@@ -1,0 +1,29 @@
+body {
+  /* 글꼴 이름에 공백이 들어가 있으면 "" 묶어서 표현 */
+  font-size: 14px;
+  font-family: "맑은 고딕", 돋움, 굴림;
+}
+p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+div:first-of-type {
+  line-height: 1.5;
+  font-size: 24px;
+}
+.serif {
+  font-family: serif;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
