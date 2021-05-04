@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #222;
+      }
+      .grid {
+        width: 500px;
+        margin: 0;
+        background-color: white;
+        font-size: 0; /* 요소의 옆에 나오는 공백 제거 */
+        text-align: right; /* 요소 배치를 오른쪽으로 하는 경우 */
+      }
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .grid-item.a {
+        background-color: orange;
+      }
+      .grid-item.b {
+        background-color: orangered;
+      }
+      .grid-item.c {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item a">A</div>
+      <div class="grid-item b">B</div>
+      <div class="grid-item c">C</div>
+    </div>
+  </body>
+</html>

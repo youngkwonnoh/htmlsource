@@ -19,12 +19,20 @@
         background-color: violet;
         clear: left; /* float 속성 해제 */
       }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <div class="box">1</div>
-    <div class="box">2</div>
-    <div class="box">3</div>
+    <div class="clearfix">
+      <!-- ctrl + shift + p => wrap => .clearfix 작성 -->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
     <div class="box1">4</div>
   </body>
 </html>

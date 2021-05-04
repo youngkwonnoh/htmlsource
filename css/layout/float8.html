@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .menu {
+        background-color: #333;
+      }
+      .menu li {
+        float: left;
+        list-style-type: none;
+      }
+      .menu li a {
+        padding: 14px 16px;
+        color: white;
+        display: inline-block; /* li에게 주어진 공간을 다 사용하기 위해 */
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: blueviolet;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu clearfix">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Content</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>
