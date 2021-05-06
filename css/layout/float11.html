@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .food {
+        border: 1px solid green;
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      .food img {
+        float: left;
+      }
+      .controls a {
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap; /* 공백을 기준으로 엔터 넣지 말기 */
+        display: block;
+        line-height: 30px;
+        position: absolute;
+        top: calc(50% - 15px);
+      }
+      .prev {
+        right: 100%;
+      }
+      .next {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSzb7iIPUc1tXF5hcSQvwI7hrOFx1cnMZeg&usqp=CAU"
+        alt="스테이크"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+        distinctio velit enim quaerat ea illo aperiam, placeat similique cum
+        ipsa sit quibusdam numquam modi illum ipsum natus harum nesciunt
+        dolorum.
+      </p>
+      <div class="controls">
+        <a href="" class="prev">previous project</a>
+        <a href="" class="next">next project</a>
+      </div>
+    </div>
+  </body>
+</html>
