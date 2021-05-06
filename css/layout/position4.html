@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .mainmenu {
+        color: white;
+        background-color: #333;
+        padding-left: 40px;
+        list-style-type: none;
+      }
+      .mainmenu > li {
+        float: left;
+        margin-right: 30px;
+        line-height: 35px;
+      }
+      .mainmenu::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .mainmenu ul {
+        background-color: #666;
+        display: none;
+      }
+      .mainmenu > li ul li {
+        padding: 0 10px;
+      }
+      .mainmenu > li:hover ul {
+        display: block;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="mainmenu">
+      <li>
+        About Us
+        <ul class="b">
+          <li>ceo greeting</li>
+          <li>history</li>
+          <li>vision</li>
+        </ul>
+      </li>
+      <li>
+        Works
+        <ul class="c">
+          <li>Design</li>
+          <li>Mobile</li>
+        </ul>
+      </li>
+      <li>Services</li>
+      <li>Location</li>
+    </ul>
+  </body>
+</html>
