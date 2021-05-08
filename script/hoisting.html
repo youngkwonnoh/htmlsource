@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //상수 선언
+      const PI = 3.14;
+
+      // 변수의 호이스팅(hoisting) : 나중에 선언된 변수 참조
+      // 끌어올려진 변수는 undefined 값 반환, 나중에 초기화를 한다고 해도 여전이 undefined임
+      console.log(x == undefined);
+      var x = 3;
+
+      // 함수의 호이스팅(hoisting)
+      foo();
+      function foo() {
+        console.log("foo");
+      }
+
+      // 호이스팅 안되는 경우
+      // TypeError: baz is not a function
+      baz();
+      var baz = function () {
+        // 함수표현식
+        console.log("baz");
+      };
+
+      // ReferenceError: Cannot access 'y' before initialization
+      console.log(y);
+      let y = 5;
+    </script>
+  </body>
+</html>
