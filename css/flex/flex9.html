@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 25px;
+      }
+      .flexbg .left {
+        background: #3498db;
+        order: 1;
+      }
+      .flexbg .right {
+        background: #34495e;
+        order: 3;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          order: 1;
+          width: 100%;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
+          deleniti. Non quia enim aperiam inventore sed dicta eligendi in itaque
+          ipsa, quidem consequatur molestias, cumque quam saepe fugiat
+          perferendis numquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+          sequi quidem voluptates ut alias, sed nulla, soluta vitae sapiente
+          dolorem perspiciatis sunt eum animi a provident consequuntur,
+          voluptatum tenetur! Animi.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>Lorem ipsum dolor sit amet</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+      </aside>
+    </div>
+  </body>
+</html>
