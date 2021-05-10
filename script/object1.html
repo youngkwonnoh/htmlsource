@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var student1 = {
+        name: "홍길동",
+        kor: 92,
+        math: 84,
+        eng: 96,
+        sci: 88,
+      };
+      //   document.write("이름 : " + student1.name + "<br>");
+      //   document.write("국어 : " + student1.kor + "<br>");
+      //   document.write("수학 : " + student1.math + "<br>");
+      //   document.write("영어 : " + student1.eng + "<br>");
+      //   document.write("과학 : " + student1.sci + "<br>");
+
+      var output = "";
+      for (var key in student1) {
+        output += "▶ " + key + " : " + student1[key] + "<br>";
+      }
+      document.write(output);
+    </script>
+  </body>
+</html>

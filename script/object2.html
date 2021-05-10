@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tv = new Object();
+
+      tv.color = "red";
+      tv.power = true;
+      tv.volume = 13;
+      tv.info = function () {
+        document.write("tv 색상 : " + this.color + "<br>");
+        document.write("tv 볼륨 : " + this.volume + "<br>");
+        document.write("tv 전원 : " + this.power + "<br>");
+      };
+
+      tv.info();
+    </script>
+  </body>
+</html>
