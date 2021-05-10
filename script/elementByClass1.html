@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="header1">Header 1</h1>
+    <script>
+      let element1 = document.getElementsByTagName("h1");
+      console.log(element1);
+      let element2 = document.getElementsByClassName("header1");
+      console.log(element2);
+      console.log(element2[0]);
+      console.log(element2[0].innerText);
+      console.log(element2.item(0));
+      console.log(element2.item(0).innerText);
+    </script>
+  </body>
+</html>

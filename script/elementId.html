@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header 1</h1>
+    <h2 id="header2">Header 2</h2>
+    <script>
+      let header1 = document.getElementById("header1");
+      console.log(header1);
+      console.log(header1.innerText);
+
+      let header2 = document.getElementById("header2");
+      console.log(header2);
+      console.log(header2.innerText);
+      // header2.innerText = "<i>with getElementById()</i>";
+      header2.innerHTML = "<i>with getElementById()</i>"; // 태그의 개념으로 넣을 땐 innerHTML
+    </script>
+  </body>
+</html>
