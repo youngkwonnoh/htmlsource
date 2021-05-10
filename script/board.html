@@ -20,7 +20,7 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#">HOME</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -59,7 +59,7 @@
       </nav>
       <div class="row">
         <div class="col-sm-2">
-          <div class="card" style="width: 18rem">
+          <div class="card">
             <div class="card-header">게시판</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">자유게시판</li>
@@ -68,9 +68,6 @@
             </ul>
           </div>
         </div>
-      </div>
-
-      <div class="row">
         <div class="col-sm-10">
           <table class="table table-hover">
             <thead>
@@ -105,11 +102,11 @@
       </div>
     </div>
     <script>
-      // 클래스명이 container 찾기
+      //클래스명이 container 찾기
       let container1 = document.getElementsByClassName("container");
       console.log(container1);
-      // 모든 css 선택자를 사용해서 원하는 요소 찾기
-      let container2 = document.getElementsByClassName("container");
+      //모든 css 선택자를 사용해서 원하는 요소 찾기
+      let container2 = document.querySelector(".container");
       console.log(container2);
 
       let navbarNav = document.querySelector("#navbarNav");

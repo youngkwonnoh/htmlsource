@@ -14,7 +14,6 @@
   <body>
     <h1 class="header" onclick="change()">Header1</h1>
     <h2>Header2</h2>
-    <button onclick="remove()">지우기</button>
     <script>
       function change() {
         // h1 가져오기
@@ -24,7 +23,7 @@
 
         let ele2 = document.querySelector(".header");
         console.log(ele2);
-        // removeChild(삭제할 요소)
+        //removeAttribute(삭제할 속성명)
         ele2.removeAttribute("class");
       }
     </script>

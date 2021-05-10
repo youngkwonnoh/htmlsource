@@ -8,16 +8,17 @@
   </head>
   <body>
     <script>
-      // 내장함수
-      // encodeURI : 영문, 숫자, 일부기호 제외 인코딩
-      // encodeURIComponent : 영문, 숫자만 제외 인코딩
+      //내장함수
+      //encodeURI - 영문,숫자,일부기호 제외 인코딩
+      //encodeURIComponent - 영문,숫자만 제외 인코딩
       document.write(
         encodeURI("http://localhost:8080/basic/info.html?name=홍길동")
       );
-
       document.write("<br>");
       document.write(
-        encodeURI("http://localhost:8080/basic/info.html?name=홍길동&page15")
+        encodeURIComponent(
+          "http://localhost:8080/basic/info.html?name=홍길동&age=15"
+        )
       );
     </script>
   </body>
