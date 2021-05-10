@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 이메일을 입력받은 후 이메일에 @ 기호가 들어있는지 확인하고
+      // 없다면 '이메일 형식을 확인하세요'라는 메세지를 경고창으로 띄운다.
+      // @이 들어있다면 화면에 입력받은 이메일 출력하기
+      var email = prompt("이메일을 입력하세요");
+      if (email.indexOf("@") == -1) {
+        alert("이메일 형식을 확인하세요");
+      } else {
+        document.write(email);
+      }
+    </script>
+  </body>
+</html>

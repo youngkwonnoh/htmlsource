@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var s = new String("hello javascript");
+
+      document.write("특정 위치 반환 : ", s.charAt(4) + "<br>");
+      document.write("문자 찾기 : ", s.indexOf("j") + "<br>"); // 문자를 찾지 못한다면 -1 리턴
+      document.write("찾을 문자 : ", s.match("ja") + "<br>");
+      document.write("찾을 문자 : ", s.match("boy") + "<br>");
+      document.write("특정 문자 변경 : ", s.replace("hello", "hi") + "<br>");
+      document.write("특정 문자 찾기(위치) 반환 : ", s.search("ja") + "<br>");
+      document.write("문자 자르기 : ", s.slice(6, 10) + "<br>");
+      document.write("문자 자르기 : ", s.substring(6, 10) + "<br>");
+      document.write("문자 공백 제거 : ", "hello   ".trim() + "<br>");
+      document.write("대문자 변경 : ", s.toUpperCase() + "<br>");
+      document.write("소문자 변경 : ", s.toLowerCase() + "<br>");
+    </script>
+  </body>
+</html>
