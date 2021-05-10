@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      show(1, 2, 3);
+      function show(a, b, c, d) {
+        // c에 값이 들어와 있으면 c, 없으면 || 뒤에 값을 넣고 출력
+        // c에 3이 들어가 있으므로 3 출력
+        c = c || 273;
+        // d에는 값이 없으므로 52가 출력
+        d = d || 52;
+        alert(a + "," + b + "," + c + "," + d);
+      }
+    </script>
+  </body>
+</html>

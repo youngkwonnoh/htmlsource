@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 익명함수 중 이름을 가지고 있는 형태는 해당 함수를 재귀적으로 호출하는데 사용하거나
+      // 디버거 등에서 함수를 구분할 때 사용
+      var g = function f(num) {
+        if (num == 0) {
+          console.log(num);
+        } else {
+          console.log(num);
+          f(num - 1);
+        }
+      };
+
+      g(5);
+    </script>
+  </body>
+</html>
