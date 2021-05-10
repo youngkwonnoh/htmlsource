@@ -1,0 +1,45 @@
+21.5.10 
+
+javascript
+
+
+"27" + 3 = 273
+Number("27") + 3 = 30
+
++ : 연결, 덧셈
+
+"27" * 3 = 81
+*, /, - : 연산
+
+
+객체
+속성 : property
+기능 : method
+
+
+내장객체
+
+String
+Date
+Array
+Math
+RegExp(정규표현)0
+
+var tv = new Object();
+let tv = new Object();
+
+아톰 에디터 => javascript
+
+함수(단독실행) == 메소드(클래스 안에)
+
+
+setTimeout() : 비동기식
+콜백함수 : 비동기식으로 수행되는 함수의 수행 시기를 맞추기 위해 나옴
+
+내장함수
+encodeURI : 영문, 숫자, 일부기호 제외 인코딩
+encodeURIComponent : 영문, 숫자만 제외 인코딩
+
+
+
+get부트스트랩 - all 릴리즈 - 4.6 - css 카피
