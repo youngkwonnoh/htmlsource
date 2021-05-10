@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header" onclick="change()">Header1</h1>
+    <h2>Header2</h2>
+    <button onclick="remove()">지우기</button>
+    <script>
+      function change() {
+        // h1 가져오기
+        // let ele1 = document.getElementsByClassName("header");
+        // console.log(ele1);
+        // document.body.removeChild(ele1[0]);
+
+        let ele2 = document.querySelector(".header");
+        console.log(ele2);
+        // removeChild(삭제할 요소)
+        ele2.removeAttribute("class");
+      }
+    </script>
+  </body>
+</html>
