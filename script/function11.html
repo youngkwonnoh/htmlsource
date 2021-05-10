@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 내장함수
+      // encodeURI : 영문, 숫자, 일부기호 제외 인코딩
+      // encodeURIComponent : 영문, 숫자만 제외 인코딩
+      document.write(
+        decodeURI(
+          "http://localhost:8080/basic/info.html?name=%ED%99%8D%EA%B8%B8%EB%8F%99"
+        )
+      );
+
+      document.write("<br>");
+      document.write(
+        decodeURIComponent(
+          "http://localhost:8080/basic/info.html?name=%ED%99%8D%EA%B8%B8%EB%8F%99&page15"
+        )
+      );
+    </script>
+  </body>
+</html>
