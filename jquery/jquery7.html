@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>인접 관계 선택자</h1>
+    <ul id="wrap">
+      <li>
+        리스트1
+        <ul>
+          <il id="list_1">리스트 1-1</il>
+          <li>리스트 1-2</li>
+        </ul>
+      </li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("body > *").parent().css("border", "1px solid red");
+      });
+    </script>
+  </body>
+</html>

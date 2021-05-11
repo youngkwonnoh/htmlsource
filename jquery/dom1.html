@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header1</h1>
+    <h2 id="header2">Header2</h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // innerText(innerHTML), text(), html()
+      // let header1 = document.getElementById("header1");
+      // console.log(header1.innerText);
+      // let header2 = document.getElementById("header2");
+      // header2.innerText = "with getElementById";
+      // header2.innerHTML = "<i>with getElementById</i>";
+
+      let header1 = $("#header1");
+      console.log(header1.html());
+      console.log(header1.text());
+
+      let header2 = $("#header2");
+      header2.html("<i>with html()</i>");
+    </script>
+  </body>
+</html>

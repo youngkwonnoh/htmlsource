@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="username">이름</label>
+      <input type="text" name="username" id="" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(":text").change(function () {
+        //입력필드를 벗어나면 소문자로 변경
+        $(this).val($(this).val().toLowerCase());
+      });
+    </script>
+  </body>
+</html>

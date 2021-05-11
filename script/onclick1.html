@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 이벤트 : 사이트에서 고객이 취하는 모든 행동
+         이벤트를 감지하면 연결된 함수를 작동
+
+         event 리스너 : event를 감지하는 상황 설정
+         event 트리거 : event와 연결된 함수를 작동시킴
+         event 핸들러 : event가 호출되면서 작동하는 함수
+    -->
+    <div>
+      <input
+        type="radio"
+        name="color"
+        id=""
+        onclick="changeColor('lightblue')"
+      />파랑색
+      <input
+        type="radio"
+        name="color"
+        id=""
+        onclick="changeColor('green')"
+      />녹색
+    </div>
+    <script>
+      function changeColor(color) {
+        // 문서의 배경색 변경
+        document.querySelector("body").style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>

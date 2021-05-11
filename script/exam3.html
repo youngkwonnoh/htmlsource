@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The Light Bulb</h2>
+    <button type="button" onclick="bulbOn()">Turn on the light</button>
+    <img src="../css/images/pic_bulboff.gif" alt="" />
+    <button type="button" onclick="bulbOff()">Turn off the light</button>
+
+    <script>
+      // changeImg() : 기존 이미지를 다른 이미지로 변경
+      let img = document.querySelector("img");
+      function bulbOn() {
+        img.src = "../css/images/pic_bulbon.gif";
+      }
+      function bulbOff() {
+        img.src = "../css/images/pic_bulboff.gif";
+      }
+    </script>
+    <!-- <button type="button" onclick="document.querySelector('img').src='pic_bulbon.gif'">Turn on the light</button>
+    <img src="../css/images/pic_bulboff.gif" alt="" />
+    <button type="button" onclick="document.querySelector('img').src='pic_bulboff.gif'">Turn off the light</button> -->
+  </body>
+</html>
