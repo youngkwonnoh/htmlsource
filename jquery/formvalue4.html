@@ -28,20 +28,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       function stop() {
-        event.preventDefault();
-
-        let a = $("#a");
-        console.log(a);
-      }
-      function checkForm() {
-        // 원래 태그가 가지고 있는 이벤트 기능 제한
-        // event.preventDefault();
         e.preventDefault();
 
-        let form = $("#form");
-        // console.log(form);
+        let a = document.querySelector("a");
+        console.log(a);
+      }
+      function checkForm(e) {
+        //원래 태그가 가지고 있는 이벤트 기능 제한
+        //event.preventDefault();
+        e.preventDefault();
+
+        let form = $("form");
+        //console.log(form);
         let username = $("#username");
-        let password = $("#password");
+        let password = $("password");
         let age = $("#age");
 
         if (username.val() == "") {
@@ -57,8 +57,7 @@
           age.focus();
           return false;
         }
-
-        form.submit();
+        // form.submit();
       }
     </script>
   </body>

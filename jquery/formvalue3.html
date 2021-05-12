@@ -20,14 +20,14 @@
         <label for="age">나이</label>
         <input type="text" name="age" id="age" />
       </div>
-      <!-- <input type="submit" value="전송" />-->
+      <!-- <input type="submit" value="전송" /> -->
       <input type="button" value="전송" onclick="checkForm()" />
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       function checkForm() {
-        let form = document.querySelector("form");
-        // console.log(form);
+        let form = $("form");
+        //console.log(form);
         let username = $("#username");
         let password = $("#password");
         let age = $("#age");
