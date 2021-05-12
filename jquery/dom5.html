@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>객체 조작</h3>
+    <p>
+      <img src="../css/images/left-arrow.png" alt="왼쪽 화살표" />
+      <button>변경</button>
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // 버튼을 누르면 왼쪽 / 오른쪽 화살표가 계속 왔다갔다하게 만들기
+      $(function () {
+        let change = true;
+        $("button").click(function () {
+          if (change) {
+            $("img").attr("src", "../css/images/right-arrow.png");
+            change = false;
+          } else {
+            $("img").attr("src", "../css/images/left-arrow.png");
+            change = true;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

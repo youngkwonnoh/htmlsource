@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The Light Bulb</h2>
+    <!-- <button type="button" onclick="bulbOn()">Turn on the light</button>
+    <img src="../css/images/pic_bulboff.gif" alt="" />
+    <button type="button" onclick="bulbOff()">Turn off the light</button> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <button
+      type="button"
+      onclick="$('img').attr('src', '../css/images/pic_bulbon.gif')"
+    >
+      Turn on the light
+    </button>
+    <img src="../css/images/pic_bulboff.gif" alt="" />
+    <button
+      type="button"
+      onclick="$('img').attr('src','../css/images/pic_bulboff.gif')"
+    >
+      Turn off the light
+    </button>
+  </body>
+</html>

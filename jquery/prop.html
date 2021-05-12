@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input type="checkbox" name="chk1" id="chk1" value="chk1" />chk1
+        <input type="checkbox" name="chk2" id="chk2" value="chk2" checked />chk2
+        <input type="checkbox" name="chk3" id="chk3" value="chk3" />chk3
+      </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        console.log($("#chk2").attr("checked")); // checked
+        console.log($("#chk2").prop("checked")); // true
+
+        if ($("#chk2").prop("checked")) {
+          $("#chk2").prop("checked", false);
+        }
+      });
+    </script>
+  </body>
+</html>

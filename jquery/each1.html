@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // 자바스크립트 forEach
+      const items = ["item1", "item2", "item3"];
+
+      for (var i = 0; i < items.length; i++) {
+        document.write(items[i] + "<br>");
+      }
+      document.write("<br>");
+      for (i in items) {
+        document.write(items[i] + "<br>");
+      }
+      document.write("<br>");
+      items.forEach(function (item) {
+        document.write(item + "<br>");
+      });
+
+      document.write("<br>");
+      // jQuery each 변경
+      let arr = ["one", "two", "three", "four", "five"];
+      $.each(arr, function (i, val) {
+        document.write(i + ":" + val + "<br>");
+      });
+      document.write("<br>");
+      $(arr).each(function (i, val) {
+        document.write(i + ":" + val + "<br>");
+      });
+    </script>
+  </body>
+</html>

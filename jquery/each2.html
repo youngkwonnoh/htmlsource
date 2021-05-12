@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+      <li>List item5</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      let liObj = $("li");
+      console.log(liObj);
+
+      $.each(liObj, function (idx) {
+        console.log(idx + " : " + $(this).text());
+      });
+      $.each(liObj, function () {
+        console.log($(this).text());
+      });
+    </script>
+  </body>
+</html>

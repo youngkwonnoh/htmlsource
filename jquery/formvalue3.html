@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="username">이름</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="age">나이</label>
+        <input type="text" name="age" id="age" />
+      </div>
+      <!-- <input type="submit" value="전송" />-->
+      <input type="button" value="전송" onclick="checkForm()" />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function checkForm() {
+        let form = document.querySelector("form");
+        // console.log(form);
+        let username = $("#username");
+        let password = $("#password");
+        let age = $("#age");
+
+        if (username.val() == "") {
+          alert("이름을 입력하세요");
+          username.focus();
+          return false;
+        } else if (password.val() == "") {
+          alert("비밀번호를 입력하세요");
+          password.focus();
+          return false;
+        } else if (age.val() == "") {
+          alert("나이를 입력하세요");
+          age.focus();
+          return false;
+        }
+        form.submit();
+      }
+    </script>
+  </body>
+</html>

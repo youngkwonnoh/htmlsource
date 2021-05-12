@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="">이름</label>
+        <input type="text" name="username" id="" />
+      </div>
+      <div>
+        <label for="">비밀번호</label>
+        <input type="password" name="password" id="" />
+      </div>
+      <div>
+        <label for="">전화번호</label>
+        <input type="tel" name="tel" id="" />
+      </div>
+      <div>
+        <button id="read">내용읽기</button>
+        <button id="modify">내용수정</button>
+        <button id="remove">내용삭제</button>
+      </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        let form = $("form");
+        $("#read").click(function () {
+          // username은 제거 후 폼 전송
+          form.attr("action", "dom1.html");
+          // form.attr("method", "post");
+          $("input[name='username']").remove();
+          // == detach() : 지워진 요소를 임시 보관
+          // var temp=$("input[name='username']").detach();
+          form.submit;
+        });
+        $("#modify").click(function () {
+          form.attr("action", "dom2.html");
+          form.empty(); // form 태그 안에 있는 하위노드 모두 삭제
+          form.submit();
+        });
+        $("#remove").click(function () {
+          form.attr("action", "dom3.html");
+          form.empty();
+          form.append("<input type='hidden' name='no' value='3'>");
+          form.submit();
+        });
+      });
+    </script>
+  </body>
+</html>

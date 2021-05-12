@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../css/images/dish1.jpg" alt="밥" />
+    <div>
+      <button type="button">이미지 변경하기</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // script 폴더의 exam2 변경
+      $("button").click(function () {
+        let img = $("img");
+        // src 속성 가져올 때
+        console.log(img.attr("src"));
+        // alt 속성 가져올 때
+        console.log(img.attr("alt"));
+
+        // src 속성 변경할 때
+        img.attr("src", "../css/images/dish2.jpg");
+      });
+    </script>
+  </body>
+</html>

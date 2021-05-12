@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ex">div 영역</div>
+    <a href="#" onclick="get()">div 요소 내용 출력하기</a>
+    <p>
+      <a href="#" onclick="set('변경되었습니다.')">div 요소 내용 변경하기</a>
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // script 폴더의 exam1 변경
+      // get() : div id ex인 요소를 가져와서 내용을 결과창으로 보여주기
+      // set() : 인자로 받은 내용을 div id ex인 내용으로 변경
+      let ex = $("#ex");
+      function get() {
+        alert(ex.html());
+      }
+      function set(msg) {
+        ex.html(msg);
+      }
+    </script>
+  </body>
+</html>
