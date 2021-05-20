@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ko = "kokokoko";
+      const koooo = "kooookoooo";
+
+      // 비캡쳐링
+      console.log(ko.match(/ko+/));
+      console.log(koooo.match(/ko+/));
+
+      console.log("");
+      // 캡쳐링
+      console.log(ko.match(/(ko)+/));
+      console.log(koooo.match(/(ko)+/));
+      console.log("");
+
+      console.log("=== 비 캡쳐링 ===");
+      console.log(ko.match(/(?:ko)+/));
+      console.log(koooo.match(/(?:ko)+/));
+
+      console.log("");
+      console.log("");
+      let regex = /(\w+)\s(\w+)/;
+      let str = "John Smith";
+      console.log("=== mach ===");
+      console.log(str.match(regex));
+      console.log("");
+      let newStr = str.replace(regex, "$2, $1");
+      console.log(newStr);
+
+      console.log("");
+      console.log("");
+      const input =
+        "Regex pros know the difference between\n" +
+        "<i>greedy</i> and <i>lazy</i> matching.";
+      const pattern = /<i>(.*)<\/i>/;
+      console.log(input.match(pattern));
+      console.log(input.replace(pattern, "<string>$1<\/strong>"));
+      document.write(input.replace(pattern, "<strong>$1<\/strong>"));
+
+      console.log("");
+      console.log("------------------");
+      let str1 = "javascript";
+      const reg = /(java)(script)/;
+      console.log(str1.match(reg));
+      console.log(str1.replace(reg, "$2-$1")); // script-java
+      console.log("-- 그룹화 --");
+      console.log(str1.match(/(?:java)(script)/));
+      console.log(str1.match(/(?:java)(script)/, "$2-$1"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #result {
+        color: red;
+        margin-top: 0;
+        font-size: 0.8em;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="tel">전화번호</label>
+      <input type="tel" name="tel" id="tel" />
+      <input type="button" value="보내기" />
+      <p id="result"></p>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        let result = $("#result");
+        $("#tel").focus(function () {
+          $("#tel").val("");
+          result.html("");
+          result.css("display", "none");
+        });
+        // 보내기버튼 클릭 시
+        $("[type='button']").click(function () {
+          const regex = /^\d{2,3}-\d{3,4}-\d{4}$/;
+          let tel = $("#tel").val();
+          if (!regex.test(tel)) {
+            result.css("display", "block");
+            result.html("전화번호를 확인해 주세요");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

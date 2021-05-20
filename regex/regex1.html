@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h4>정규 표현식과 일치하는 문자열 리턴</h4>
+      <p id="exec"></p>
+    </div>
+    <div>
+      <h4>정규 표현식과 일치하는 문자열이 있으면 true, 없으면 false</h4>
+      <p id="test"></p>
+    </div>
+    <div>
+      <h4>정규 표현식과 일치하는 문자열 리턴</h4>
+      <p id="match"></p>
+    </div>
+    <div>
+      <h4>정규 표현식과 일치하는 위치 리턴</h4>
+      <p id="search"></p>
+    </div>
+    <script>
+      let string = "Javascript jQuery Ajax";
+
+      // 정규표현식 객체 설정
+      // const regexp1 = new RegExp("Ajax");
+      const regexp1 = /Ajax/;
+
+      document.getElementById("exec").innerText = regexp1.exec(string);
+
+      document.getElementById("test").innerText = regexp1.test(string);
+
+      document.getElementById("match").innerText = string.match(regexp1);
+
+      document.getElementById("search").innerText = string.search(regexp1);
+    </script>
+  </body>
+</html>

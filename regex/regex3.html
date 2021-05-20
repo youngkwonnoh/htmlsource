@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #result {
+        color: red;
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      031-873-1439 <br />
+      010-1234-8079 <br />
+      070-3333-1439 <br />
+      02-453-1439 <br />
+    </p>
+    <p id="result"></p>
+    <script>
+      let p1 = document.querySelector("p").innerText;
+      let result = document.querySelector("#result");
+
+      const regex = /^\d{2,3}-\d{3,4}-\d{4}$/gm;
+
+      result.innerText = p1.match(regex);
+    </script>
+  </body>
+</html>
