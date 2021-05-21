@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #newsletter_topics {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="myForm">
+      <fieldset>
+        <legend>유효성 검증</legend>
+        <div>
+          <label for="username">username</label>
+          <div>
+            <input type="text" name="username" id="username" />
+          </div>
+        </div>
+        <div>
+          <label for="password">password</label>
+          <div>
+            <input type="password" name="password" id="password" />
+          </div>
+        </div>
+        <div>
+          <label for="password">confirm_password</label>
+          <div>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="email">email</label>
+          <div>
+            <input type="text" name="email" id="email" />
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy">사이트 방침 동의</label>
+        </div>
+        <div>
+          <input type="checkbox" name="newsletter" id="newsletter" />
+          <label for="newsletter">newsletter 받기</label>
+        </div>
+        <fieldset id="newsletter_topics">
+          <legend>Topics(최소 2개는 고르세요)</legend>
+          <div>
+            <input
+              type="checkbox"
+              name="topic_marketflash"
+              id="topic_marketflash"
+            />
+            <label for="topic_marketflash">Marketflash</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="topic"
+              id="topic_fuzz"
+              value="topic_fuzz"
+            />
+            <label for="topic_fuzz">Latest fuzz</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="topic"
+              id="topic_digester"
+              value="topic_digester"
+            />
+            <label for="topic_digester">Mailing list digester</label>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="submit" />
+        </div>
+      </fieldset>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="validate2.js"></script>
+  </body>
+</html>

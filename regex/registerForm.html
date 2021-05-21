@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form id="joinform" action="joinProcess.jsp" method="post">
+      <div class="form-group row justify-content-center">
+        <label for="userid" class="col-sm-2 col-form-label">아이디</label>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            name="userid"
+            id="userid"
+            class="form-control"
+            placeholder="아이디를 입력하세요"
+          />
+          <small id="userid" class="text-info"></small>
+        </div>
+      </div>
+      <div class="form-group row justify-content-center">
+        <label for="pass1" class="col-sm-2 col-form-label">비밀번호</label>
+        <div class="col-sm-6">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            placeholder="비밀번호를 입력하세요"
+          />
+          <small id="password" class="text-info"></small>
+        </div>
+      </div>
+      <div class="form-group row justify-content-center">
+        <label for="pass2" class="col-sm-2 col-form-label"
+          >비밀번호 확인
+        </label>
+        <div class="col-sm-6">
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm_password"
+            class="form-control"
+            placeholder="비밀번호를 다시 입력하세요"
+          />
+          <small id="confirm_password" class="text-info"></small>
+        </div>
+      </div>
+      <div class="form-group row justify-content-center">
+        <label for="name" class="col-sm-2 col-form-label">이름 </label>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="이름을 입력하세요"
+          />
+          <small id="name" class="text-info"></small>
+        </div>
+      </div>
+      <div class="form-group row justify-content-center">
+        <label for="pass2" class="col-sm-2 col-form-label">성별 </label>
+        <div class="col-sm-6">
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="gender"
+              name="gender"
+              value="남"
+              class="form-check-input"
+            />남
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              name="gender"
+              value="여"
+              class="form-check-input"
+            />여
+          </div>
+          <small id="gender" class="text-info"></small>
+        </div>
+      </div>
+      <div class="form-group row justify-content-center">
+        <label for="email" class="col-sm-2 col-form-label">이메일</label>
+        <div class="col-sm-6">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="example@gmail.com"
+          />
+          <small id="email" class="text-info"></small>
+        </div>
+      </div>
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary">입력</button>
+        <button type="reset" class="btn btn-secondary">취소</button>
+      </div>
+    </form>
+    <!-- <script src="register.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="register_jquery.js"></script>
+  </body>
+</html>
